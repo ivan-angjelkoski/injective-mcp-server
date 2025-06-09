@@ -1,0 +1,34 @@
+{
+  "name": "injective-mcp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@injectivelabs/networks": "^1.15.24",
+    "@injectivelabs/sdk-ts": "^1.15.26",
+    "@injectivelabs/ts-types": "^1.15.24",
+    "@injectivelabs/utils": "^1.15.24",
+    "@modelcontextprotocol/sdk": "^1.4.0",
+    "fuse.js": "^7.1.0",
+    "yargs": "^18.0.0"
+  }
+}
